@@ -11,14 +11,17 @@ const questions = {
     question3: "Please enter your Table of Contents: ",
     question4: "Please enter your Installation Guide: ",
     question5: "Please enter your Usage Guide: ",
-    question6: "Please enter your Contributors: ",
-    question7: "Please enter your Name",
-    question8: "Please enter any tests you ran on your project: ",
-    question9: "Please enter your Github Profile Picture Link: ",
-    question10: "Please enter your Github Email: ",
+    question6: "Please select a license",
+    question7: "Please enter your Contributors: ",
+    question8: "Please enter your Name",
+    question9: "Please enter any tests you ran on your project: ",
+    question10: "Please enter your Github Profile Picture Link: ",
+    question11: "Please enter your Github Email: ",
 };
 
 // after finished testing - ask for github username and pull all repos - select repo you would like to generate readme for and include that info
+// add object constructor to allow user to choose what they want in readme
+
 // console.log(questions);
 
 // writes data to readme file
@@ -72,28 +75,34 @@ function userInfo() {
                 name: "usage"
             },
             {
-                type: "input",
+                type: "checkbox",
                 message: questions.question6,
-                name: "contributors"
+                name: "license",
+                choices: ["MIT", "Apache 2.0", "GNU General Public 3.0", "ISC"]
             },
             {
                 type: "input",
                 message: questions.question7,
-                name: "name"
+                name: "contributors"
             },
             {
                 type: "input",
                 message: questions.question8,
-                name: "tests"
+                name: "name"
             },
             {
                 type: "input",
                 message: questions.question9,
-                name: "pro"
+                name: "tests"
             },
             {
                 type: "input",
                 message: questions.question10,
+                name: "pro"
+            },
+            {
+                type: "input",
+                message: questions.question11,
                 name: "email"
             },
         ]);

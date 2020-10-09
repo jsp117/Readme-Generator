@@ -1,4 +1,31 @@
+const mitBadge = "https://img.shields.io/badge/License-MIT-yellow.svg"
+const mitLink = "https://www.mit.edu/~amini/LICENSE.md";
+const apBadge = "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
+const apLink = "https://www.apache.org/licenses/LICENSE-2.0";
+const gnBadge = "https://img.shields.io/badge/License-GPLv3-blue.svg";
+const gnLink = "https://www.gnu.org/licenses/gpl-3.0";
+const iscBadge = "https://img.shields.io/badge/License-ISC-blue.svg";
+const iscLink = "https://opensource.org/licenses/ISC";
+var badge = "";
+var link = "";
+
 function generateMarkdown(data) {
+  if(data.license[0] === "MIT"){
+    badge = mitBadge;
+    link = mitLink;
+  }else if(data.license[0] === "Apache 2.0"){
+    badge = apBadge;
+    link = apLink;
+  }else if(data.license[0] === "GNU General Public 3.0"){
+    badge = gnBadge;
+    link = gnLink;
+  }else if(data.license[0] === "ISC"){
+    badge = iscBadge;
+    link = iscLink;
+  }
+  console.log("badgelink: ", badge);
+  console.log("link: ", link);
+  console.log("License", data.license[0]);
   return `# ${data.projectName}
 
   ## Description
@@ -19,29 +46,11 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ## License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
-  MIT License
+  [![License: ${data.license}](${badge})](${link})
   
-  Copyright (c) [2020] [Name Goes here]
+  Copyright &copy; [2020] [${data.name}]
   
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-  
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-  
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
   
   ## Contributing
   ${data.contributors}
@@ -49,7 +58,7 @@ function generateMarkdown(data) {
   ## Author
   ${data.name}
   
-  * [Github Profile Picture](${data.pro})
+  * ![Github Profile Picture](${data.pro})
   * [Github Email](${data.email})
   
   ## Tests
