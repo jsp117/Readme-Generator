@@ -1,37 +1,37 @@
-# Readme Generator
+# readme gen
 
-  ## Description
-  Generates Readmes
+## Description
+readme Gen
   
-  ## Table of Contents
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
   
-  ## Installation
-  npm install
+## Installation
+hello world
   
-  ## Usage
-  npm install
+## Usage
+waddup
   
-  ## License
+## License
   
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: GNU General Public 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   
-  Copyright &copy; [2020] [Jon]
+Copyright &copy; [2020] [Jon]
   
+## Contributors
+roger, kerwin, manuel
   
-  ## Contributing
-  Roger, Kerwin, Manuel
+## Author
+Jon
+Email Address: jonsp14@gmail.com
   
-  ## Author
-  Jon
+![Github Profile Picture](https://github.com/jsp117.png?size=150) 
+
   
-  ![Github Profile Picture](https://github.com/jsp117.png)
-  Email Address: jonsp14@gmail.com
-  
-  ## Tests
-  test
+## Tests
+none

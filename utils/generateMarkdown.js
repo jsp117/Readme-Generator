@@ -51,14 +51,15 @@ ${data.usage}
   
 Copyright &copy; [2020] [${data.name}]
   
-## Contributing
+## Contributors
 ${data.contributors}
   
 ## Author
 ${data.name}
-  
-![Github Profile Picture](https://github.com/${data.username}.png)
 Email Address: ${data.email}
+  
+![Github Profile Picture](https://github.com/${data.username}.png?size=150) 
+
   
 ## Tests
 ${data.tests}`;
