@@ -1,7 +1,7 @@
-# a
+# Readme Generator
 
   ## Description
-  aa
+  Generates Readmes
   
   ## Table of Contents
   * [Description](#description)
@@ -12,26 +12,26 @@
   * [Tests](#tests)
   
   ## Installation
-  a
+  npm install
   
   ## Usage
-  a
+  npm install
   
   ## License
   
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
   
-  Copyright (&copy;) [2020] [a]
+  Copyright &copy; [2020] [Jon]
   
   
   ## Contributing
-  a
+  Roger, Kerwin, Manuel
   
   ## Author
-  a
+  Jon
   
-  * ![Github Profile Picture](a)
-  * [Github Email](a)
+  ![Github Profile Picture](https://github.com/jsp117.png)
+  Email Address: jonsp14@gmail.com
   
   ## Tests
-  a
+  test

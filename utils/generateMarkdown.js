@@ -28,42 +28,40 @@ function generateMarkdown(data) {
   console.log("License", data.license[0]);
   return `# ${data.projectName}
 
-  ## Description
-  ${data.desc}
+## Description
+${data.desc}
   
-  ## Table of Contents
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
   
-  ## Installation
-  ${data.install}
+## Installation
+${data.install}
   
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
   
-  ## License
+## License
   
-  [![License: ${data.license}](${badge})](${link})
+[![License: ${data.license}](${badge})](${link})
   
-  Copyright &copy; [2020] [${data.name}]
+Copyright &copy; [2020] [${data.name}]
   
+## Contributing
+${data.contributors}
   
-  ## Contributing
-  ${data.contributors}
+## Author
+${data.name}
   
-  ## Author
-  ${data.name}
+![Github Profile Picture](https://github.com/${data.username}.png)
+Email Address: ${data.email}
   
-  * ![Github Profile Picture](${data.pro})
-  * [Github Email](${data.email})
-  
-  ## Tests
-  ${data.tests}
-`;
+## Tests
+${data.tests}`;
 }
 
 module.exports = generateMarkdown;
