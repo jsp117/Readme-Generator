@@ -24,21 +24,21 @@ function generateMarkdown(data) {
     `## Installation
     ${data.install}`;
     tIns = 
-    `<br/>* [Installation](#installation)`;
+    `\n* [Installation](#installation)`;
   }
   if (data.confirmUsage) {
     use =
     `## Usage
     ${data.Usage}`;
     tUse = 
-    `<br/>* [Usage](#usage)`;
+    `\n* [Usage](#usage)`;
   }
   if (data.confirmCon) {
     con =
     `## Contributors
     ${data.contributors}`;
     tCon = 
-    `<br/>* [Contributors](#contributors)`;
+    `\n* [Contributors](#contributors)`;
   }
 
   if (data.license[0] === "MIT") {

@@ -1,33 +1,35 @@
-# Readme Generator
+# readme gen
 
 ## Description
-this is a readme gen
+aojaogfjdaogj
   
 ## Table of Contents
-* [Description](#description)<br/>* [Installation](#installation)
-* [License](#license)<br/>* [Contributors](#contributors)
+* [Description](#description)
+* [Installation](#installation)
+* [License](#license)
+* [Contributors](#contributors)
 * [Tests](#tests)
   
 ## Installation
-    npm install 
+    aoaejggjaegj 
   
 
   
 ## License
   
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/~amini/LICENSE.md)
   
-Copyright &copy; [2020] [Jon]
+Copyright &copy; [2020] [test]
   
 ## Contributors
-    Kerwin, Manuel, Roger
+    test
   
 ## Author
-Jon
-Email Address: jonsp14@gmail.com
+test
+Email Address: test
   
 ![Github Profile Picture](https://github.com/jsp117.png?size=150) 
 
   
 ## Tests
-npm test
+test
