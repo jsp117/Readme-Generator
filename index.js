@@ -10,12 +10,14 @@ const questions = {
     question3: "Please enter your Project Description: ",
     question4: "Would you like an Installation Guide?",
     question5: "Please enter your Installation Guide: ",
-    question6: "Please enter your Usage Guide: ",
-    question7: "Please select a license",
-    question8: "Please enter your Contributors: ",
-    question9: "Please enter your Name",
-    question10: "Please enter any tests you ran on your project: ",
-    question11: "Please enter your Email Address: ",
+    question6: "Would you like a Usage guide?",
+    question7: "Please enter your Usage Guide: ",
+    question8: "Please select a license",
+    question9: "Would you like a Contributors section?",
+    question10: "Please enter your Contributors: ",
+    question11: "Please enter your Name",
+    question12: "Please enter any tests you ran on your project: ",
+    question13: "Please enter your Email Address: ",
 };
 
 // add object constructor to allow user to choose what they want in readme
@@ -54,52 +56,76 @@ function userInfo() {
             name: "desc"
         },
         {
-            type: "input",
+            type: "confirm",
             message: questions.question4,
             name: "confirmInstall"
         },
-        // 
-        // {
-        //     when: function (data) {
-        //         if(data.confirmInstall){
-
-        //         }
-        //     }
-        // },
         {
+            // asks next question if confirmInstall == true
+            when: function (data) {
+                if(data.confirmInstall){
+                    return true;
+                }else{
+                    return false;
+                }
+            },
             type: "input",
             message: questions.question5,
             name: "install"
         },
         {
-            type: "input",
+            type: "confirm",
             message: questions.question6,
-            name: "usage"
+            name: "confirmUsage"
+        },
+        {
+            when: function (data) {
+                if(data.confirmUsage){
+                    return true;
+                }else{
+                    return false;
+                }
+            },
+            type: "input",
+            message: questions.question7,
+            name: "usage",
         },
         {
             type: "checkbox",
-            message: questions.question7,
+            message: questions.question8,
             name: "license",
             choices: ["MIT", "Apache 2.0", "GNU General Public 3.0", "ISC"]
         },
         {
+            type: "confirm",
+            message: questions.question9,
+            name: "confirmCon"
+        },
+        {
+            when: function (data) {
+                if(data.confirmCon){
+                    return true;
+                }else{
+                    return false;
+                }
+            },
             type: "input",
-            message: questions.question8,
+            message: questions.question10,
             name: "contributors"
         },
         {
             type: "input",
-            message: questions.question9,
+            message: questions.question11,
             name: "name"
         },
         {
             type: "input",
-            message: questions.question10,
+            message: questions.question12,
             name: "tests"
         },
         {
             type: "input",
-            message: questions.question11,
+            message: questions.question13,
             name: "email"
         },
     ]);

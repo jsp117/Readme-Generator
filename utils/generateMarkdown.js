@@ -8,18 +8,49 @@ const iscBadge = "https://img.shields.io/badge/License-ISC-blue.svg";
 const iscLink = "https://opensource.org/licenses/ISC";
 var badge = "";
 var link = "";
+// install section
+let ins = "";
+let tIns = "";
+// usage section
+let use = "";
+let tUse = "";
+// contributors section
+let con = "";
+let tCon = "";
 
 function generateMarkdown(data) {
-  if(data.license[0] === "MIT"){
+  if (data.confirmInstall) {
+    ins =
+    `## Installation
+    ${data.install}`;
+    tIns = 
+    `<br/>* [Installation](#installation)`;
+  }
+  if (data.confirmUsage) {
+    use =
+    `## Usage
+    ${data.Usage}`;
+    tUse = 
+    `<br/>* [Usage](#usage)`;
+  }
+  if (data.confirmCon) {
+    con =
+    `## Contributors
+    ${data.contributors}`;
+    tCon = 
+    `<br/>* [Contributors](#contributors)`;
+  }
+
+  if (data.license[0] === "MIT") {
     badge = mitBadge;
     link = mitLink;
-  }else if(data.license[0] === "Apache 2.0"){
+  } else if (data.license[0] === "Apache 2.0") {
     badge = apBadge;
     link = apLink;
-  }else if(data.license[0] === "GNU General Public 3.0"){
+  } else if (data.license[0] === "GNU General Public 3.0") {
     badge = gnBadge;
     link = gnLink;
-  }else if(data.license[0] === "ISC"){
+  } else if (data.license[0] === "ISC") {
     badge = iscBadge;
     link = iscLink;
   }
@@ -32,18 +63,13 @@ function generateMarkdown(data) {
 ${data.desc}
   
 ## Table of Contents
-* [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
+* [Description](#description)${tIns}${tUse}
+* [License](#license)${tCon}
 * [Tests](#tests)
   
-## Installation
-${data.install}
+${ins} 
   
-## Usage
-${data.usage}
+${use}
   
 ## License
   
@@ -51,8 +77,7 @@ ${data.usage}
   
 Copyright &copy; [2020] [${data.name}]
   
-## Contributors
-${data.contributors}
+${con}
   
 ## Author
 ${data.name}

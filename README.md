@@ -1,30 +1,26 @@
-# readme gen
+# Readme Generator
 
 ## Description
-readme Gen
+this is a readme gen
   
 ## Table of Contents
-* [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
+* [Description](#description)<br/>* [Installation](#installation)
+* [License](#license)<br/>* [Contributors](#contributors)
 * [Tests](#tests)
   
 ## Installation
-hello world
+    npm install 
   
-## Usage
-waddup
+
   
 ## License
   
-[![License: GNU General Public 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
   
 Copyright &copy; [2020] [Jon]
   
 ## Contributors
-roger, kerwin, manuel
+    Kerwin, Manuel, Roger
   
 ## Author
 Jon
@@ -34,4 +30,4 @@ Email Address: jonsp14@gmail.com
 
   
 ## Tests
-none
+npm test
