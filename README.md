@@ -19,7 +19,7 @@ To install all dependencies, run Npm install in your terminal while opened to th
 
 ## Usage
 
-To run this application, open your terminal to the folder it is located in, and type node index.js. Follow the series of prompts to the best of your ability, and it will generate a styled readme in the same folder. 
+To run this application, open your terminal to the folder it is located in and type "npm install". When those files are finished downloading type "node index.js: to run the application. Follow the series of prompts to the best of your ability, and the application will generate a styled readme in the same folder. 
 
 ## Built_with
 
