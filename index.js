@@ -12,19 +12,20 @@ const questions = {
     question5: "Please enter your Installation Guide: ",
     question6: "Would you like a Usage guide?",
     question7: "Please enter your Usage Guide: ",
-    question8: "Please select a license",
-    question9: "Would you like a Contributors section?",
-    question10: "Please enter your Contributors: ",
-    question11: "Please enter your Name",
-    question12: "Please enter any tests you ran on your project: ",
-    question13: "Please enter your Email Address: ",
+    question8: "Would you like a license section?",
+    question9: "Please select a license:",
+    question10: "Would you like a Contributors section?",
+    question11: "Please enter your Contributors: ",
+    question12: "Please enter your full Name:",
+    question13: "Would you like a test section?",
+    question14: "How do you test your application? ",
+    question15: "Please enter your Email Address: ",
 };
 
-// add object constructor to allow user to choose what they want in readme
+// add when statements to allow user to choose which sections they want in readme
 
-// console.log(questions);
 
-// starts program , gets userinfo, generates markdown, then writes to file
+// starts application , gets userinfo, generates markdown, then writes to file
 async function init() {
     try {
         const info = await userInfo();
@@ -91,14 +92,26 @@ function userInfo() {
             name: "usage",
         },
         {
-            type: "checkbox",
+            type: "confirm",
             message: questions.question8,
+            name: "confirmLicense",
+        },
+        {
+            when: function (data) {
+                if(data.confirmLicense){
+                    return true;
+                }else{
+                    return false;
+                }
+            },
+            type: "list",
+            message: questions.question9,
             name: "license",
             choices: ["MIT", "Apache 2.0", "GNU General Public 3.0", "ISC"]
         },
         {
             type: "confirm",
-            message: questions.question9,
+            message: questions.question10,
             name: "confirmCon"
         },
         {
@@ -110,22 +123,34 @@ function userInfo() {
                 }
             },
             type: "input",
-            message: questions.question10,
+            message: questions.question11,
             name: "contributors"
         },
         {
             type: "input",
-            message: questions.question11,
+            message: questions.question12,
             name: "name"
         },
         {
+            type: "confirm",
+            message: questions.question13,
+            name: "confirmTest"
+        },
+        {
+            when: function (data) {
+                if(data.confirmTest){
+                    return true;
+                }else{
+                    return false;
+                }
+            },
             type: "input",
-            message: questions.question12,
-            name: "tests"
+            message: questions.question14,
+            name: "test"
         },
         {
             type: "input",
-            message: questions.question13,
+            message: questions.question15,
             name: "email"
         },
     ]);
