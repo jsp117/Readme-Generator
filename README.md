@@ -7,7 +7,7 @@ This application is a Readme Generator that takes user input and creates a style
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Built_With](#built_with)
+* [Built With](#built_with)
 * [Contributors](#contributors)
 * [Author](#author)
 * [License](#license)
@@ -44,7 +44,7 @@ Jonathan SanPedro - Bachelors of Information Technology at Rutgers New Brunswick
 
 MIT License
 
-Copyright (c) [2020] [Jonathan J. SanPedro]
+Copyright &copy; [2020] [Jonathan J. SanPedro]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

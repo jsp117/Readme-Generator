@@ -32,7 +32,7 @@ async function init() {
         console.log(info);
         const readMe = await generateMarkdown(info);
         write("README.md", readMe);
-        console.log("done");
+        console.log("Readme Generated!");
     }
     catch (e) {
         console.log("Error: ", e);

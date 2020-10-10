@@ -71,10 +71,7 @@ function generateMarkdown(data) {
       `\n* [Tests](#tests)`;
   }
 
-  
-  console.log("badgelink: ", badge);
-  console.log("link: ", link);
-  console.log("License: ", data.license);
+
   return `# ${data.projectName}
 
 ## Description
@@ -87,7 +84,7 @@ ${ins}${use}${con}${tes}
   
 ## Author
 
-${data.name}
+${data.name}\n
 Email Address: ${data.email}
   
 ![Github Profile Picture](https://github.com/${data.username}.png?size=150)${lic}  
