@@ -7,6 +7,7 @@ This application is a Readme Generator that takes user input and creates a style
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Code Snippets](#code_snippets)
 * [Built With](#built_with)
 * [Contributors](#contributors)
 * [Author](#author)
@@ -20,6 +21,18 @@ To install all dependencies, run Npm install in your terminal while opened to th
 ## Usage
 
 To run this application, open your terminal to the folder it is located in and type "npm install". When those files are finished downloading type "node index.js" to run the application. Follow the series of prompts to the best of your ability, and the application will generate a styled readme in the same folder. 
+
+[Video Walkthrough](https://drive.google.com/file/d/1q1MFOdC1vALIYjOt360NORh10czgBYur/view)
+
+## Code Snippets
+
+This code snippet displays a when statement that is a part of the Inquirer dependency. It works by displaying the question only if the user types "y" when asked to confirm if they want the install section on their readme. If the user leaves input blank or types "n", the question will be skipped. Similar code is used to skip other questions.
+
+![When Statement](./assets/confirmImage.png)
+
+This code snippet shows how the application generates markdown dynamically based on user input. Each answer typed in by the user is displayed using template literals. The table of contents and all other content on the page are stored as variables that are set to the user input. Each section that the user answers "n" to in the prompt is left out. 
+
+![Generate Markdown](./assets/createMarkdown.png)
 
 ## Built_with
 
