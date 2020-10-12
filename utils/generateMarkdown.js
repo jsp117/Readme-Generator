@@ -1,4 +1,4 @@
-const mitBadge = "https://img.shields.io/badge/License-MIT-yellow.svg"
+const mitBadge = "https://img.shields.io/badge/License-MIT-yellow.svg";
 const mitLink = "https://www.mit.edu/~amini/LICENSE.md";
 const apBadge = "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
 const apLink = "https://www.apache.org/licenses/LICENSE-2.0";
